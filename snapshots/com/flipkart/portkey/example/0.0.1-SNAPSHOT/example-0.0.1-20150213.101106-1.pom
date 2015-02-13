@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.flipkart.portkey</groupId>
+		<artifactId>portkey</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>example</artifactId>
+	<name>Portkey Example</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.flipkart.portkey</groupId>
+			<artifactId>persistence-layer</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.flipkart.portkey</groupId>
+			<artifactId>rdbms</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.flipkart.portkey</groupId>
+			<artifactId>redis</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>${c3p0.version}</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-expression</artifactId>
+	<version>${spring.version}</version>
+</dependency>
+	</dependencies>
+
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>local</id>
+			<build>
+				<filters>
+					<filter>src/main/filters/local.properties</filter>
+				</filters>
+			</build>
+		</profile>
+		<profile>
+			<id>stage</id>
+			<build>
+				<filters>
+					<filter>src/main/filters/stage.properties</filter>
+				</filters>
+			</build>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<build>
+				<filters>
+					<filter>src/main/filters/prod.properties</filter>
+				</filters>
+			</build>
+		</profile>
+	</profiles>
+</project>

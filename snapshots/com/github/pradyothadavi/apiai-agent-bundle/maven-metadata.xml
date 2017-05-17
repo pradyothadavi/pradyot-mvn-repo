@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.github.pradyothadavi</groupId>
-  <artifactId>apiai-agent-interactor</artifactId>
+  <artifactId>apiai-agent-bundle</artifactId>
   <versioning>
     <versions>
-      <version>0.0.1-SNAPSHOT</version>
       <version>0.0.2-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20170517090542</lastUpdated>
+    <lastUpdated>20170517090546</lastUpdated>
   </versioning>
 </metadata>

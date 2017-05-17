@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.pradyothadavi</groupId>
+  <artifactId>apiai-agent-interactor</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20170517050038</lastUpdated>
+  </versioning>
+</metadata>

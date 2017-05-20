@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.github.pradyothadavi</groupId>
+  <artifactId>apiai-agent-model</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20170520.080833</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20170520080833</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.0.3-20170520.080833-1</value>
+        <updated>20170520080833</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.0.3-20170520.080833-1</value>
+        <updated>20170520080833</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
